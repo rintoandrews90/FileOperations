@@ -20,6 +20,8 @@
 		D603377822ED86D800D89DCD /* FileOperations+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D603377722ED86D800D89DCD /* FileOperations+Directories.swift */; };
 		D603377922ED922000D89DCD /* FileOperations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D603373722ED789D00D89DCD /* FileOperations.framework */; };
 		D603377A22ED922000D89DCD /* FileOperations.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D603373722ED789D00D89DCD /* FileOperations.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D603377F22EDE60100D89DCD /* FileOperations+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */; };
+		D603378122EDE94B00D89DCD /* FileOperations+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D603378022EDE94B00D89DCD /* FileOperations+Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		D603376E22ED78BA00D89DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D603377522ED7AE200D89DCD /* FileOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperations.swift; sourceTree = "<group>"; };
 		D603377722ED86D800D89DCD /* FileOperations+Directories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Directories.swift"; sourceTree = "<group>"; };
+		D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Helpers.swift"; sourceTree = "<group>"; };
+		D603378022EDE94B00D89DCD /* FileOperations+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Error.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				D603373B22ED789D00D89DCD /* Info.plist */,
 				D603377522ED7AE200D89DCD /* FileOperations.swift */,
 				D603377722ED86D800D89DCD /* FileOperations+Directories.swift */,
+				D603378022EDE94B00D89DCD /* FileOperations+Error.swift */,
+				D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */,
 			);
 			path = FileOperations;
 			sourceTree = "<group>";
@@ -352,7 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D603377F22EDE60100D89DCD /* FileOperations+Helpers.swift in Sources */,
 				D603377822ED86D800D89DCD /* FileOperations+Directories.swift in Sources */,
+				D603378122EDE94B00D89DCD /* FileOperations+Error.swift in Sources */,
 				D603377622ED7AE200D89DCD /* FileOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

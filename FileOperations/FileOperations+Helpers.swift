@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+
+public extension FileOperations {
+
+    static func createDirectoryPath(with directoryType: DirectoryType, fileName: String) -> URL{
+        switch directoryType {
+        case .document:
+            return getDocumentDirectoryURL().appendingPathComponent(fileName)
+        case .cache:
+            return getCacheDirectoryURL().appendingPathComponent(fileName)
+        case .temp:
+            return getTemporaryDirectoryURL().appendingPathComponent(fileName)
+        }
+    }
+}
