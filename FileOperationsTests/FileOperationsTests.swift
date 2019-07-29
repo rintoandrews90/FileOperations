@@ -48,7 +48,7 @@ class FileOperationsTests: XCTestCase {
     }
     
     func testCreateDirectory(){
-        let filename = "Rinto"
+        let filename = "\0"
         let path:URL? = FileOperations.createDirectoryPath(with: .document, fileName: filename)
         if path != nil {
             XCTAssert(true, "Document URL is present")

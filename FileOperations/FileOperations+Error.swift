@@ -11,6 +11,7 @@ import Foundation
 
 extension FileOperations {
     
+    //Error Codes used the library
     public enum ErrorCode: Int {
         case invalidFileName = 0
         case invalidFileURL = 1
@@ -18,6 +19,14 @@ extension FileOperations {
     
     public static let errorDomain = "FileError"
     
+    /// Create error
+    ///
+    /// - Parameters:
+    ///   - errorCode: error code
+    ///   - description: description
+    ///   - failureReason: failure reason
+    ///   - recoverySuggestion: recovery suggestion
+    /// - Returns: error
     static func generateFileError(_ errorCode: ErrorCode, description: String?, failureReason: String?, recoverySuggestion: String?) -> Error {
         let errorInfo: [String: Any] = [NSLocalizedDescriptionKey : description ?? "",
                                         NSLocalizedRecoverySuggestionErrorKey: recoverySuggestion ?? "",

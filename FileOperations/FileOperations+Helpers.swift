@@ -10,7 +10,13 @@ import Foundation
 
 
 public extension FileOperations {
-
+    
+    /// Create directory path   
+    ///
+    /// - Parameters:
+    ///   - directoryType: documents/dahce/temp directory
+    ///   - fileName: file name
+    /// - Returns: directory url
     static func createDirectoryPath(with directoryType: DirectoryType, fileName: String) -> URL{
         switch directoryType {
         case .document:

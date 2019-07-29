@@ -12,21 +12,21 @@ public extension FileOperations {
     
     /// Method returns Document Directory URL
     ///
-    /// - Returns: URL
+    /// - Returns: document directory URL
     static func getDocumentDirectoryURL() -> URL {
        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     }
     
     /// Method returns Temporary Directory URL
     ///
-    /// - Returns: URL
+    /// - Returns: temporary directory URL
     static func getTemporaryDirectoryURL() -> URL{
         return FileManager.default.temporaryDirectory
     }
     
     /// Method returns Cache Directory URL
     ///
-    /// - Returns: URL
+    /// - Returns: cache directory URL
     static func getCacheDirectoryURL() -> URL{
         return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
     }
@@ -47,9 +47,24 @@ public extension FileOperations {
         }
     }
     
-    static private func removeAllFiles(in directoryURL:URL) {
-        
-    }
+//    static private func removeAllFiles(in directoryURL:URL) {
+//        var error:Error?
+//        
+//        let fileManager = FileManager.default
+//        var directoryURL = try FileManager.default.contentsOfDirectory(atPath: directoryURL)
+//        
+//        
+//        if directoryContents != nil {
+//            for path in directoryContents {
+//                let fullPath = dirPath.stringByAppendingPathComponent(path as! String)
+//                if fileManager.removeItemAtPath(fullPath, error: error) == false {
+//                    println("Could not delete file: \(error)")
+//                }
+//            }
+//        } else {
+//            println("Could not retrieve directory: \(error)")
+//        }
+//    }
     
     
     
@@ -58,8 +73,8 @@ public extension FileOperations {
     /// - Parameters:
     ///   - directoryType: documents/dahce/temp directory
     ///   - fileName: file name
-    /// - Returns: URL of the created directory
-    /// - Throws: Throws error if invalid file name
+    /// - Returns: url of the created directory
+    /// - Throws: throws error if invalid file name
     static func createDirectory(with directoryType: DirectoryType,fileName: String) throws -> URL {
        
         let directoryURL:URL?
@@ -94,8 +109,8 @@ public extension FileOperations {
     /// Create directory with given path
     ///
     /// - Parameter directoryURL: directory URL
-    /// - Returns: URL
-    /// - Throws: Throws error if invalid file name
+    /// - Returns: url of the created directory
+    /// - Throws: throws error if invalid file name
     static func createDirectory(with directoryURL:URL) throws -> URL {
         /// Try to create directory with given URL
         do {
