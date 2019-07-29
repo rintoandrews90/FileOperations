@@ -15,7 +15,7 @@ extension FileOperations {
         case invalidFileName = 0
     }
     
-    public static let errorDomain = "DiskErrorDomain"
+    public static let errorDomain = "FileError"
     
     static func generateFileError(_ errorCode: ErrorCode, description: String?, failureReason: String?, recoverySuggestion: String?) -> Error {
         let errorInfo: [String: Any] = [NSLocalizedDescriptionKey : description ?? "",

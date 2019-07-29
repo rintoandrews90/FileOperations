@@ -31,6 +31,22 @@ public extension FileOperations {
         return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
     }
     
+    /// Remove all contents of the directory
+    ///
+    /// - Parameter directoryType: documents/dahce/temp directory
+    static func clear(with directoryType:DirectoryType) throws {
+        switch directoryType {
+        case .document:
+            let path = getTemporaryDirectoryURL()
+            break
+        case.cache:
+            let path = getCacheDirectoryURL()
+            break
+        case .temp:
+            let path = getTemporaryDirectoryURL()
+        }
+    }
+    
     /// Create directory in documents/dahce/temp directory
     ///
     /// - Parameters:
@@ -63,14 +79,32 @@ public extension FileOperations {
                 .invalidFileName,
                 description: "Invalid file name.",
                 failureReason: "Write failed",
-                recoverySuggestion: "Provide valid file names"
+                recoverySuggestion: "Provide valid file name"
             )
         }
         return directoryURL!
     }
     
-    static func createDirectory(in path:URL) {
-        
+    /// Create directory with given path
+    ///
+    /// - Parameter directoryURL: directory URL
+    /// - Returns: URL
+    /// - Throws: Throws error if invalid file name
+    static func createDirectory(with directoryURL:URL) throws -> URL {
+        /// Try to create directory with given URL
+        do {
+            try FileManager.default.createDirectory(atPath: directoryURL.path, withIntermediateDirectories: true, attributes: nil)
+        }
+        catch {
+            /// Throws error if invalid file name
+            throw generateFileError(
+                .invalidFileName,
+                description: "Invalid file name.",
+                failureReason: "Write failed",
+                recoverySuggestion: "Provide valid file name"
+            )
+        }
+        return directoryURL
     }
     
     static func removeDirectory(in Directory:DirectoryType, with fileName:String) {
