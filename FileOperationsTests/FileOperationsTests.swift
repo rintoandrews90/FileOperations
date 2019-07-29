@@ -12,22 +12,54 @@ import XCTest
 class FileOperationsTests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetDocumentsDirectory() {
+        let documentsDirectory:URL? = FileOperations.getDocumentDirectoryURL()
+        if documentsDirectory != nil {
+            XCTAssert(true, "Document URL is present")
+            print(documentsDirectory as Any)
+        }else{
+            XCTFail("Error while retriving douments directory")
+        }
+    }
+    
+    func testGetTempDirectory() {
+        let documentsDirectory:URL? = FileOperations.getTemporaryDirectoryURL()
+        if documentsDirectory != nil {
+            XCTAssert(true, "Document URL is present")
+            print(documentsDirectory as Any)
+        }else{
+            XCTFail("Error while retriving temp directory")
+        }
+    }
+    
+    func testGetCacheDirectory() {
+        let documentsDirectory:URL? = FileOperations.getCacheDirectoryURL()
+        if documentsDirectory != nil {
+            XCTAssert(true, "Document URL is present")
+            print(documentsDirectory as Any)
+        }else{
+            XCTFail("Error while retriving cache directory")
+        }
+    }
+    
+    func testCreateDirectory(){
+        let filename = "Rinto"
+        let path:URL? = FileOperations.createDirectoryPath(with: .document, fileName: filename)
+        if path != nil {
+            XCTAssert(true, "Document URL is present")
+            print(path as Any)
+        }else{
+            XCTFail("Error creating directory")
+        }
     }
 
     func testPerformanceExample() {
-        // This is an example of a performance test case.
         self.measure {
-            // Put the code you want to measure the time of here.
         }
     }
 

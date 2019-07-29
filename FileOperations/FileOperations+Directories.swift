@@ -47,6 +47,12 @@ public extension FileOperations {
         }
     }
     
+    static private func removeAllFiles(in directoryURL:URL) {
+        
+    }
+    
+    
+    
     /// Create directory in documents/dahce/temp directory
     ///
     /// - Parameters:
@@ -98,10 +104,10 @@ public extension FileOperations {
         catch {
             /// Throws error if invalid file name
             throw generateFileError(
-                .invalidFileName,
-                description: "Invalid file name.",
+                .invalidFileURL,
+                description: "Invalid File URL.",
                 failureReason: "Write failed",
-                recoverySuggestion: "Provide valid file name"
+                recoverySuggestion: "Provide valid file URL"
             )
         }
         return directoryURL
