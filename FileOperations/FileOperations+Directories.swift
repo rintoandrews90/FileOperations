@@ -56,6 +56,10 @@ public extension FileOperations {
         }
     }
     
+    /// Remove all contents of the directory
+    ///
+    /// - Parameter directoryURL: directory url
+    /// - Throws: throws error if failed
     static private func removeAllFiles(in directoryURL:URL) throws {
          do {
             let contents = try FileManager.default.contentsOfDirectory(at: directoryURL, includingPropertiesForKeys: nil, options: [])
@@ -127,12 +131,30 @@ public extension FileOperations {
         return directoryURL
     }
     
-    static func removeDirectory(in Directory:DirectoryType, with fileName:String) {
-        
+    /// Remove directory from documents/dahce/temp directory
+    ///
+    /// - Parameters:
+    ///   - directoryType: documents/dahce/temp directory
+    ///   - directoryName: directory name
+    /// - Throws: throws error if delete failed
+    static func removeDirectory(in directoryType:DirectoryType, with directoryName:String) throws {
+        let directoryURL = createDirectoryPath(with: directoryType, fileName: directoryName)
+        do {
+            try FileManager.default.removeItem(at: directoryURL)
+        } catch {
+            throw error
+        }
     }
     
-    static func removeDirectory(in path:URL) {
-        
+    /// Remove directory form URL
+    ///
+    /// - Parameter path: path URL
+    /// - Throws: throws error if delete failed
+    static func removeDirectory(in path:URL) throws {
+        do {
+            try FileManager.default.removeItem(at: path)
+        } catch {
+            throw error
+        }
     }
-    
 }
