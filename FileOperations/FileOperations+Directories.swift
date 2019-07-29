@@ -35,38 +35,37 @@ public extension FileOperations {
     ///
     /// - Parameter directoryType: documents/dahce/temp directory
     static func clear(with directoryType:DirectoryType) throws {
+        
+        var directoryPath:URL?
+        
         switch directoryType {
         case .document:
-            let path = getTemporaryDirectoryURL()
+             directoryPath = getTemporaryDirectoryURL()
             break
         case.cache:
-            let path = getCacheDirectoryURL()
+             directoryPath = getCacheDirectoryURL()
             break
         case .temp:
-            let path = getTemporaryDirectoryURL()
+             directoryPath = getTemporaryDirectoryURL()
+        }
+        
+        do {
+            try removeAllFiles(in: directoryPath!)
+        } catch {
+            throw error
         }
     }
     
-//    static private func removeAllFiles(in directoryURL:URL) {
-//        var error:Error?
-//        
-//        let fileManager = FileManager.default
-//        var directoryURL = try FileManager.default.contentsOfDirectory(atPath: directoryURL)
-//        
-//        
-//        if directoryContents != nil {
-//            for path in directoryContents {
-//                let fullPath = dirPath.stringByAppendingPathComponent(path as! String)
-//                if fileManager.removeItemAtPath(fullPath, error: error) == false {
-//                    println("Could not delete file: \(error)")
-//                }
-//            }
-//        } else {
-//            println("Could not retrieve directory: \(error)")
-//        }
-//    }
-    
-    
+    static private func removeAllFiles(in directoryURL:URL) throws {
+         do {
+            let contents = try FileManager.default.contentsOfDirectory(at: directoryURL, includingPropertiesForKeys: nil, options: [])
+            for fileUrl in contents  {
+                try? FileManager.default.removeItem(at: fileUrl)
+            }
+         }catch {
+            throw error
+        }
+    }
     
     /// Create directory in documents/dahce/temp directory
     ///
@@ -97,7 +96,7 @@ public extension FileOperations {
         catch {
             /// Throws error if invalid file name
             throw generateFileError(
-                .invalidFileName,
+                .invalidDirectoryeName,
                 description: "Invalid file name.",
                 failureReason: "Write failed",
                 recoverySuggestion: "Provide valid file name"
@@ -119,7 +118,7 @@ public extension FileOperations {
         catch {
             /// Throws error if invalid file name
             throw generateFileError(
-                .invalidFileURL,
+                .invalidDirectoryURL,
                 description: "Invalid File URL.",
                 failureReason: "Write failed",
                 recoverySuggestion: "Provide valid file URL"

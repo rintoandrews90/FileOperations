@@ -27,4 +27,20 @@ public extension FileOperations {
             return getTemporaryDirectoryURL().appendingPathComponent(fileName)
         }
     }
+    
+    static func convertURLtoString(url:URL) -> String {
+       return url.absoluteString
+    }
+    
+    static func convertStringtoURL(string:String) -> URL {
+        return URL(string: string)!
+    }
+    
+    static func convertFileURLtoString(url:URL) {
+        
+    }
+    
+    static func convertStringtoFileURL(string:String) {
+        
+    }
 }
