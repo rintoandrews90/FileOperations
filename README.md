@@ -10,6 +10,14 @@ A library that helps developers to easily perform file-related operations. In iO
 -   Xcode 10.1+
 -   Swift 4.2
 
+## Installation
+
+### CocoaPods
+[CocoaPods](https://cocoapods.org/)  is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your  `Podfile`:
+
+    pod 'FileOperations'
+    
+
 **DirectoryType defines these three types of directories**
 
     public enum DirectoryType {
