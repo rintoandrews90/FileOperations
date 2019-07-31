@@ -48,9 +48,13 @@ Delete all contents of Directory
 try? FileOperations.clear(with: .document)
  ```
 
-Method to create Directory
+Create Directory in Document/Temp/Cache Directory with given file name.Method returns path of the directory created
+```swift
+let path:URL? = FileOperations.createDirectoryPath(with: .document, directoryName: filename)
+ ```
+
+Create Directory form given URL path.Method returns path of the directory created
 ```swift
 FileOperations.createDirectory(with directoryType: DirectoryType,direcotryName: String)
  ```
-
        
