@@ -78,19 +78,19 @@ public extension FileOperations {
     ///   - fileName: file name
     /// - Returns: url of the created directory
     /// - Throws: throws error if invalid file name
-    static func createDirectory(with directoryType: DirectoryType,fileName: String) throws -> URL {
+    static func createDirectory(with directoryType: DirectoryType,direcotryName: String) throws -> URL {
        
         let directoryURL:URL?
         
         switch directoryType {
         case .document:
-            directoryURL = createDirectoryPath(with: .document, fileName: fileName)
+            directoryURL = createDirectoryPath(with: .document, fileName: direcotryName)
             break
         case .cache:
-            directoryURL = createDirectoryPath(with: .cache, fileName: fileName)
+            directoryURL = createDirectoryPath(with: .cache, fileName: direcotryName)
             break
         case .temp:
-            directoryURL = createDirectoryPath(with: .temp, fileName: fileName)
+            directoryURL = createDirectoryPath(with: .temp, fileName: direcotryName)
             break
         }
         /// Try to create directory with given URL
