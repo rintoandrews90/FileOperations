@@ -55,6 +55,7 @@ let path:URL? = FileOperations.createDirectoryPath(with: .document, directoryNam
 
 Create Directory form given URL path.Method returns path of the directory created
 ```swift
-FileOperations.createDirectory(with directoryType: DirectoryType,direcotryName: String)
+let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("Images")
+let path:URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
  ```
        
