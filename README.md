@@ -26,19 +26,20 @@ A library that helps developers to easily perform file-related operations. In iO
     case cache
     }
 
-Method to get URL of Document Directory
+## URL 
+Get Document Directory URL
 ```swift
 let documentDirectoryURL = FileOperations.getDocumentDirectoryURL()
  ```
        
-Method to get URL of Temporary Directory
+Get Temporary Directory URL
 ```swift
-let TemporaryDirectoryURL =  FileOperations.getTemporaryDirectoryURL()
+let temporaryDirectoryURL =  FileOperations.getTemporaryDirectoryURL()
  ```
 
-Method to get URL of Cache Directory
+Get Cache Directory URL
 ```swift
-let CacheDirectoryURL = FileOperations.getCacheDirectoryURL()
+let cacheDirectoryURL = FileOperations.getCacheDirectoryURL()
  ```
 
 Method to delete all contents of Directory
