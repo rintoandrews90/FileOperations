@@ -28,17 +28,17 @@ A library that helps developers to easily perform file-related operations. In iO
 
 Method to get URL of Document Directory
 ```swift
-FileOperations.getDocumentDirectoryURL()
+let documentDirectoryURL = FileOperations.getDocumentDirectoryURL()
  ```
        
 Method to get URL of Temporary Directory
 ```swift
-FileOperations.getTemporaryDirectoryURL()
+let TemporaryDirectoryURL =  FileOperations.getTemporaryDirectoryURL()
  ```
 
 Method to get URL of Cache Directory
 ```swift
-FileOperations.getCacheDirectoryURL()
+let CacheDirectoryURL = FileOperations.getCacheDirectoryURL()
  ```
 
 Method to delete all contents of Directory
