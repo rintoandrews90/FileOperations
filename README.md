@@ -4,6 +4,12 @@ A library that helps developers to easily perform file-related operations. In iO
 
 >We write our files mainly into three directories Documents Directory, Temporary Directory, Cache Directory
 
+## Requirements
+
+-   iOS 10.0+ 
+-   Xcode 10.1+
+-   Swift 4.2
+
 **DirectoryType defines these three types of directories**
 
     public enum DirectoryType {
