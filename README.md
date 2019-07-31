@@ -45,7 +45,7 @@ let cacheDirectoryURL = FileOperations.getCacheDirectoryURL()
 
 Delete all contents of Directory
 ```swift
-FileOperations.clear(with directoryType:DirectoryType)
+try? FileOperations.clear(with: .document)
  ```
 
 Method to create Directory
