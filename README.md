@@ -60,5 +60,10 @@ let path:URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
  ```
 Remove directory from document/temp/cache directory with given file name
 ```swift
-document/temp/cache directory with given file name
+ try? FileOperations.removeDirectory(in: .document, with: "test")
+ ```
+Remove directory with provided URL
+```swift
+ let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
+ try? FileOperations.removeDirectory(in: documentDirectoryURL)
  ```
