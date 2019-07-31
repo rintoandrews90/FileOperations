@@ -5,9 +5,12 @@ A library that helps developers to easily perform file-related operations. In iO
 >We write our files mainly into three directories Documents Directory, Temporary Directory, Cache Directory
 
 Method to get URL of Document Directory
-
-       getDocumentDirectoryURL()
+```swift
+	getDocumentDirectoryURL()
+ ```
        
 Method to get URL of Temporary Directory
-
-    getTemporaryDirectoryURL
+```swift
+	getTemporaryDirectoryURL()
+ ```
+       
