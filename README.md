@@ -41,7 +41,7 @@ Get Cache Directory URL
 ```swift
 let cacheDirectoryURL = FileOperations.getCacheDirectoryURL()
  ```
-## URL Methods
+## Directory Methods
 
 Delete all contents of Directory
 ```swift
