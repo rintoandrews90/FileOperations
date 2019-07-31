@@ -65,5 +65,5 @@ Remove directory from document/temp/cache directory with given file name
 Remove directory with provided URL
 ```swift
  let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
- try? FileOperations.removeDirectory(in: documentDirectoryURL)
+ try? FileOperations.removeDirectory(with directoryURL:documentDirectoryURL)
  ```
