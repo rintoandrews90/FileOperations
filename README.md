@@ -69,3 +69,6 @@ Remove directory with provided URL
  ```
 Create Text File
 Remove Text File
+Append to Text File
+
+File Exisits
