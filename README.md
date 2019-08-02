@@ -50,13 +50,13 @@ try? FileOperations.clear(with: .document)
 
 Create directory in document/temp/cache directory with given file name. Method returns path of the directory created
 ```swift
-let path:URL? = FileOperations.createDirectoryPath(with: .document, directoryName: filename)
+let path = FileOperations.createDirectoryPath(with: .document, directoryName: filename)
  ```
 
 Create directory form given URL path. Method returns path of the directory created
 ```swift
 let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("Images")
-let path:URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
+let path = try? FileOperations.createDirectory(with: documentDirectoryURL)
  ```
 Remove directory from document/temp/cache directory with given file name
 ```swift
