@@ -47,17 +47,6 @@ class FileOperationsTests: XCTestCase {
         }
     }
     
-    func testCreateDirectory(){
-        let filename = "\0"
-        let path:URL? = FileOperations.createDirectoryPath(with: .document, directoryName: filename)
-        if path != nil {
-            XCTAssert(true, "Document URL is present")
-            print(path as Any)
-        }else{
-            XCTFail("Error creating directory")
-        }
-    }
-
     func testCreateDirectoryWithRUL(){
         let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
         let path:URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
@@ -70,6 +59,9 @@ class FileOperationsTests: XCTestCase {
     }
     
     func testPerformanceExample() {
+        
+        try? FileOperations.clearDirectory(path: .document)
+        let path = try? FileOperations.createDirectory(in: .document, direcotryName: "Image")
         self.measure {
         }
     }

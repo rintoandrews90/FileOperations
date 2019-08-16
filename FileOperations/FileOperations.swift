@@ -12,7 +12,7 @@ public class FileOperations {
     
     fileprivate init() { }
     
-    /// DirectoryType define type of directory in application sandbox
+    /// DirectoryPath define type of directory in application sandbox
     ///
     /// - document: document Directory
     /// - temp: temp Directory
