@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FileOperations"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A Library that helps developers to handle file operations"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                   This Library contains methods for iOS file operations
+                   This Library contains methods for iOS file operations. This library helps developers to easily implement file operations
 			DESC
 
   spec.homepage     = "https://github.com/rintoandrews90/FileOperations"
@@ -40,7 +40,13 @@ Pod::Spec.new do |spec|
   #
 
   spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #spec.license      = { :type => "MIT", :file => "Licence.md"}
+
+  spec.license = { :type => 'MIT', :text => <<-LICENSE
+                   Copyright 2012
+                   Permission is granted to...
+                 LICENSE
+                 }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -67,6 +73,8 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.platform     = :ios, "10.0"
 
+  spec.swift_version = '4.2'
+
   #  When using multiple platforms
   # spec.ios.deployment_target = "10.0"
   # spec.osx.deployment_target = "10.7"
@@ -80,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/rintoandrews90/FileOperations.git",  :tag => "0.0.1"  }
+  spec.source       = { :git => "https://github.com/rintoandrews90/FileOperations.git", :tag => "0.0.2"  }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
