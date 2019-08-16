@@ -1,8 +1,22 @@
-# File Operations
+# File Operations (Beta Mode)
 
 A library that helps developers to easily perform file-related operations. In iOS, 
 
 >We write our files mainly into three directories Documents Directory, Temporary Directory, Cache Directory
+
+## Requirements
+
+-   iOS 10.0+ 
+-   Xcode 10.1+
+-   Swift 4.2
+
+## Installation
+
+### CocoaPods
+[CocoaPods](https://cocoapods.org/)  is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your  `Podfile`:
+
+    pod 'FileOperations'
+    
 
 **DirectoryType defines these three types of directories**
 
@@ -12,29 +26,49 @@ A library that helps developers to easily perform file-related operations. In iO
     case cache
     }
 
-Method to get URL of Document Directory
+## URL Methods
+Get Document Directory URL
 ```swift
-FileOperations.getDocumentDirectoryURL()
+let documentDirectoryURL = FileOperations.getDocumentDirectoryURL()
  ```
        
-Method to get URL of Temporary Directory
+Get Temporary Directory URL
 ```swift
-FileOperations.getTemporaryDirectoryURL()
+let temporaryDirectoryURL =  FileOperations.getTemporaryDirectoryURL()
  ```
 
-Method to get URL of Cache Directory
+Get Cache Directory URL
 ```swift
-FileOperations.getCacheDirectoryURL()
+let cacheDirectoryURL = FileOperations.getCacheDirectoryURL()
+ ```
+## Directory Methods
+
+Delete all contents of Directory
+```swift
+try? FileOperations.clear(with: .document)
  ```
 
-Method to delete all contents of Directory
+Create directory in document/temp/cache directory with given file name. Method returns path of the directory created
 ```swift
-FileOperations.clear(with directoryType:DirectoryType)
+let path = FileOperations.createDirectoryPath(with: .document, directoryName: filename)
  ```
 
-Method to create Directory
+Create directory form given URL path. Method returns path of the directory created
 ```swift
-FileOperations.createDirectory(with directoryType: DirectoryType,direcotryName: String)
+let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("Images")
+let path = try? FileOperations.createDirectory(with: documentDirectoryURL)
  ```
+Remove directory from document/temp/cache directory with given file name
+```swift
+ try? FileOperations.removeDirectory(in: .document, with: "test")
+ ```
+Remove directory with provided URL
+```swift
+ let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
+ try? FileOperations.removeDirectory(with directoryURL:documentDirectoryURL)
+ ```
+Create Text File
+Remove Text File
+Append to Text File
 
-       
+File Exisits
