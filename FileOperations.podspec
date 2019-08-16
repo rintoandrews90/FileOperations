@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/rintoandrews90/FileOperations.git", :tag => "1beab0d8e9d43963c2225bf38a9abacb82748e5c" }
+  spec.source       = { :git => "https://github.com/rintoandrews90/FileOperations.git", :branch => "master"  }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
