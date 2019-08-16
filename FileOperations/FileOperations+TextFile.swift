@@ -10,6 +10,5 @@ import Foundation
 
 extension FileOperations {
     static func createTextFile(in directoryType: DirectoryPath, fileName: String, content: String) throws {
-        let filePath = getDirectoryPath(by: directoryType)
     }
 }
