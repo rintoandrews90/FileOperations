@@ -18,13 +18,12 @@ A library that helps developers to easily perform file-related operations. In iO
     pod 'FileOperations'
     
 
-**DirectoryType defines these three types of directories**
+**DirectoryPath defines three directories which commonly used in our iOS application**
 
-    public enum DirectoryType {
-    case document
-    case temp
-    case cache
-    }
+    1. document   
+    2. temp   
+    3. cache
+
 
 ## URL Methods
 Get Document Directory URL
@@ -45,12 +44,12 @@ let cacheDirectoryURL = FileOperations.getCacheDirectoryURL()
 
 Delete all contents of Directory
 ```swift
-try? FileOperations.clear(with: .document)
+try? FileOperations.clearDirectory(path: .document)
  ```
 
 Create directory in document/temp/cache directory with given file name. Method returns path of the directory created
 ```swift
-let path = FileOperations.createDirectoryPath(with: .document, directoryName: filename)
+let path = try? FileOperations.createDirectory(in: .document, direcotryName: "Image")
  ```
 
 Create directory form given URL path. Method returns path of the directory created
@@ -60,7 +59,7 @@ let path = try? FileOperations.createDirectory(with: documentDirectoryURL)
  ```
 Remove directory from document/temp/cache directory with given file name
 ```swift
- try? FileOperations.removeDirectory(in: .document, with: "test")
+ try? FileOperations.removeDirectory(.document, with: "Image")
  ```
 Remove directory with provided URL
 ```swift
