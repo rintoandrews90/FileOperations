@@ -18,48 +18,48 @@ class FileOperationsTests: XCTestCase {
     }
 
     func testGetDocumentsDirectory() {
-        let documentsDirectory:URL? = FileOperations.getDocumentDirectoryURL()
+        let documentsDirectory: URL? = FileOperations.getDocumentDirectoryURL()
         if documentsDirectory != nil {
             XCTAssert(true, "Document URL is present")
             print(documentsDirectory as Any)
-        }else{
+        } else {
             XCTFail("Error while retriving douments directory")
         }
     }
-    
+
     func testGetTempDirectory() {
-        let documentsDirectory:URL? = FileOperations.getTemporaryDirectoryURL()
+        let documentsDirectory: URL? = FileOperations.getTemporaryDirectoryURL()
         if documentsDirectory != nil {
             XCTAssert(true, "Document URL is present")
             print(documentsDirectory as Any)
-        }else{
+        } else {
             XCTFail("Error while retriving temp directory")
         }
     }
-    
+
     func testGetCacheDirectory() {
-        let documentsDirectory:URL? = FileOperations.getCacheDirectoryURL()
+        let documentsDirectory: URL? = FileOperations.getCacheDirectoryURL()
         if documentsDirectory != nil {
             XCTAssert(true, "Document URL is present")
             print(documentsDirectory as Any)
-        }else{
+        } else {
             XCTFail("Error while retriving cache directory")
         }
     }
-    
-    func testCreateDirectoryWithRUL(){
+
+    func testCreateDirectoryWithRUL() {
         let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
-        let path:URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
+        let path: URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
         if path != nil {
             XCTAssert(true, "Document URL is present")
             print(path as Any)
-        }else{
+        } else {
             XCTFail("Error creating directory")
         }
     }
-    
+
     func testPerformanceExample() {
-        
+
         try? FileOperations.clearDirectory(path: .document)
         let path = try? FileOperations.createDirectory(in: .document, direcotryName: "Image")
         self.measure {

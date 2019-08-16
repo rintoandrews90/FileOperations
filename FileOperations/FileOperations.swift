@@ -9,9 +9,9 @@
 import Foundation
 
 public class FileOperations {
-    
+
     fileprivate init() { }
-    
+
     /// DirectoryPath define type of directory in application sandbox
     ///
     /// - document: document Directory

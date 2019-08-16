@@ -52,15 +52,17 @@ public extension FileOperations {
     /// - Throws: throws error if failed
     static private func removeAllFiles(in directoryURL: URL) throws {
          do {
-            let contents = try FileManager.default.contentsOfDirectory(at: directoryURL, includingPropertiesForKeys: nil, options: [])
-            for fileUrl in contents  {
+            let contents = try FileManager.default.contentsOfDirectory(at: directoryURL,
+                                                                       includingPropertiesForKeys: nil,
+                                                                       options: [])
+            for fileUrl in contents {
                 try? FileManager.default.removeItem(at: fileUrl)
             }
-         }catch {
+         } catch {
             throw error
         }
     }
-    
+
     /// Create directory in documents/dahce/temp directory
     ///
     /// - Parameters:
@@ -69,25 +71,23 @@ public extension FileOperations {
     /// - Returns: url of the created directory
     /// - Throws: throws error if invalid file name
     static func createDirectory(in path: DirectoryPath, direcotryName: String) throws -> URL {
-       
-        let directoryURL:URL!
-        
+
+        let directoryURL: URL!
+
         switch path {
         case .document:
             directoryURL = getDirectoryPath(by: .document, directoryName: direcotryName)
-            break
         case .cache:
             directoryURL = getDirectoryPath(by: .cache, directoryName: direcotryName)
-            break
         case .temp:
-            directoryURL = getDirectoryPath(by: .temp, directoryName:  direcotryName)
-            break
+            directoryURL = getDirectoryPath(by: .temp, directoryName: direcotryName)
         }
         /// Try to create directory with given URL
         do {
-            try FileManager.default.createDirectory(atPath: directoryURL!.path, withIntermediateDirectories: true, attributes: nil)
-        }
-        catch {
+            try FileManager.default.createDirectory(atPath: directoryURL!.path,
+                                                    withIntermediateDirectories: true,
+                                                    attributes: nil)
+        } catch {
             /// Throws error if invalid file name
             throw generateFileError(
                 .invalidDirectoryeName,
@@ -109,8 +109,7 @@ public extension FileOperations {
             try FileManager.default.createDirectory(atPath: directoryURL.path,
                                                     withIntermediateDirectories: true,
                                                     attributes: nil)
-        }
-        catch {
+        } catch {
             /// Throws error if invalid file name
             throw generateFileError(
                 .invalidDirectoryURL,

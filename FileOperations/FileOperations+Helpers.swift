@@ -56,7 +56,7 @@ public extension FileOperations {
     }
     static func convertFileURLtoString(url: URL) {
     }
-    
+
     static func convertStringtoFileURL(string: String) {
     }
 }
