@@ -17,7 +17,7 @@ public class FileOperations {
     /// - document: document Directory
     /// - temp: temp Directory
     /// - cache: cache Directory
-    public enum DirectoryType {
+    public enum DirectoryPath {
         case document
         case temp
         case cache

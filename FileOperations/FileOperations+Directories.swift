@@ -34,11 +34,11 @@ public extension FileOperations {
     /// Remove all contents of the directory
     ///
     /// - Parameter directoryType: documents/dahce/temp directory
-    static func clear(with directoryType:DirectoryType) throws {
+    static func clearDirectory(path:DirectoryPath) throws {
         
-        var directoryPath:URL?
+        var directoryPath:URL!
         
-        switch directoryType {
+        switch path {
         case .document:
              directoryPath = getTemporaryDirectoryURL()
             break
@@ -74,23 +74,23 @@ public extension FileOperations {
     /// Create directory in documents/dahce/temp directory
     ///
     /// - Parameters:
-    ///   - directoryType: documents/dahce/temp directory
+    ///   - path: documents/dahce/temp directory
     ///   - fileName: file name
     /// - Returns: url of the created directory
     /// - Throws: throws error if invalid file name
-    static func createDirectory(with directoryType: DirectoryType,direcotryName: String) throws -> URL {
+    static func createDirectory(in path: DirectoryPath, direcotryName: String) throws -> URL {
        
-        let directoryURL:URL?
+        let directoryURL:URL!
         
-        switch directoryType {
+        switch path {
         case .document:
-            directoryURL = createDirectoryPath(with: .document, fileName: direcotryName)
+            directoryURL = createDirectoryPath(with: .document, directoryName: direcotryName)
             break
         case .cache:
-            directoryURL = createDirectoryPath(with: .cache, fileName: direcotryName)
+            directoryURL = createDirectoryPath(with: .cache, directoryName: direcotryName)
             break
         case .temp:
-            directoryURL = createDirectoryPath(with: .temp, fileName: direcotryName)
+            directoryURL = createDirectoryPath(with: .temp, directoryName: direcotryName)
             break
         }
         /// Try to create directory with given URL
@@ -137,8 +137,8 @@ public extension FileOperations {
     ///   - directoryType: documents/dahce/temp directory
     ///   - directoryName: directory name
     /// - Throws: throws error if delete failed
-    static func removeDirectory(in directoryType:DirectoryType, with directoryName:String) throws {
-        let directoryURL = createDirectoryPath(with: directoryType, fileName: directoryName)
+    static func removeDirectory(path:DirectoryPath, with directoryName:String) throws {
+        let directoryURL = createDirectoryPath(with: path, directoryName: directoryName)
         do {
             try FileManager.default.removeItem(at: directoryURL)
         } catch {
@@ -150,9 +150,9 @@ public extension FileOperations {
     ///
     /// - Parameter path: path URL
     /// - Throws: throws error if delete failed
-    static func removeDirectory(in path:URL) throws {
+    static func removeDirectory(with directoryURL:URL) throws {
         do {
-            try FileManager.default.removeItem(at: path)
+            try FileManager.default.removeItem(at: directoryURL)
         } catch {
             throw error
         }

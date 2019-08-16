@@ -49,7 +49,7 @@ class FileOperationsTests: XCTestCase {
     
     func testCreateDirectory(){
         let filename = "\0"
-        let path:URL? = FileOperations.createDirectoryPath(with: .document, fileName: filename)
+        let path:URL? = FileOperations.createDirectoryPath(with: .document, directoryName: filename)
         if path != nil {
             XCTAssert(true, "Document URL is present")
             print(path as Any)
@@ -58,6 +58,17 @@ class FileOperationsTests: XCTestCase {
         }
     }
 
+    func testCreateDirectoryWithRUL(){
+        let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
+        let path:URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
+        if path != nil {
+            XCTAssert(true, "Document URL is present")
+            print(path as Any)
+        }else{
+            XCTFail("Error creating directory")
+        }
+    }
+    
     func testPerformanceExample() {
         self.measure {
         }

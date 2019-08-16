@@ -13,8 +13,8 @@ extension FileOperations {
     
     //Error Codes used the library
     public enum ErrorCode: Int {
-        case invalidDirectoryeName = 0
-        case invalidDirectoryURL = 1
+        case invalidDirectoryeName  = 0
+        case invalidDirectoryURL    = 1
     }
     
     public static let errorDomain = "FileError"

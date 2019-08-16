@@ -17,21 +17,29 @@ public extension FileOperations {
     ///   - directoryType: documents/dahce/temp directory
     ///   - fileName: file name
     /// - Returns: directory url
-    static func createDirectoryPath(with directoryType: DirectoryType, fileName: String) -> URL{
+    static func createDirectoryPath(with directoryType: DirectoryPath, directoryName: String) -> URL{
         switch directoryType {
         case .document:
-            return getDocumentDirectoryURL().appendingPathComponent(fileName)
+            return getDocumentDirectoryURL().appendingPathComponent(directoryName)
         case .cache:
-            return getCacheDirectoryURL().appendingPathComponent(fileName)
+            return getCacheDirectoryURL().appendingPathComponent(directoryName)
         case .temp:
-            return getTemporaryDirectoryURL().appendingPathComponent(fileName)
+            return getTemporaryDirectoryURL().appendingPathComponent(directoryName)
         }
     }
     
+    /// Convert path URL to string
+    ///
+    /// - Parameter url: url
+    /// - Returns: string
     static func convertURLtoString(url:URL) -> String {
        return url.absoluteString
     }
     
+    /// Convert string to URL
+    ///
+    /// - Parameter string: string
+    /// - Returns: URL
     static func convertStringtoURL(string:String) -> URL {
         return URL(string: string)!
     }
