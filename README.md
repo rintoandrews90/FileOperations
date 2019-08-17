@@ -1,39 +1,43 @@
 ![adfsdfenter image description here](https://raw.githubusercontent.com/rintoandrews90/FileOperations/master/folder.png)
 # File Operations Preview
 
-
+  
 
 A library that helps developers to easily perform file-related operations. In iOS,
 
-
+  
 
 >_We write our files mainly into three directories Documents Directory, Temporary Directory, Cache Directory_
 
-
+  
 
 ## Requirements
 
+  
 
+| File Operations Version | 0.0.2 |
+|--|--|
+| iOS Version | 10+ |
+|Xcode|10+|
+| Swift | 4.2 |
 
-- iOS 10.0+
-
-- Xcode 10.1+
-
-- Swift 4.2
-
-
+  
 
 ## Installation
 
-
+  
 
 ### CocoaPods
 
 [CocoaPods](https://cocoapods.org/)  is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your  `Podfile`:
 
+  
+
+    pod 'FileOperations'
+
+  
 
 
-pod 'FileOperations'
 
 
 
@@ -45,7 +49,7 @@ pod 'FileOperations'
 
 3. cache
 
-
+ 
 ## URL Methods
 
 Get Document Directory URL
@@ -64,7 +68,7 @@ let temporaryDirectoryURL =  FileOperations.getTemporaryDirectoryURL()
 
 ```
 
-
+  
 
 Get Cache Directory URL
 
@@ -76,7 +80,7 @@ let cacheDirectoryURL = FileOperations.getCacheDirectoryURL()
 
 ## Directory Methods
 
-
+  
 
 Delete all contents of Directory
 
@@ -86,7 +90,7 @@ try? FileOperations.clearDirectory(path: .document)
 
 ```
 
-
+  
 
 Create directory in document/temp/cache directory with given file name. Method returns path of the directory created
 
@@ -96,7 +100,7 @@ let path = try? FileOperations.createDirectory(in: .document, direcotryName: "Im
 
 ```
 
-
+  
 
 Create directory form given URL path. Method returns path of the directory created
 
