@@ -14,11 +14,10 @@ A library that helps developers to easily perform file-related operations. In iO
 ## Requirements
 
   
-
 | File Operations Version | 0.0.2 |
 |--|--|
-| iOS Version | 10+ |
-|Xcode|10+|
+| iOS Version | 10.0+ |
+| Xcode | 10+ |
 | Swift | 4.2 |
 
   
