@@ -66,8 +66,3 @@ Remove directory with provided URL
  let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
  try? FileOperations.removeDirectory(with directoryURL:documentDirectoryURL)
  ```
-Create Text File
-Remove Text File
-Append to Text File
-
-File Exisits
