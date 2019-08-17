@@ -23,6 +23,7 @@
 		D603377F22EDE60100D89DCD /* FileOperations+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */; };
 		D603378122EDE94B00D89DCD /* FileOperations+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D603378022EDE94B00D89DCD /* FileOperations+Error.swift */; };
 		D642F6952306E39900013FA6 /* FileOperations+TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D642F6942306E39900013FA6 /* FileOperations+TextFile.swift */; };
+		D64A9E1E2307CFF500540AD1 /* FileOperationsTests+TextFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A9E1D2307CFF500540AD1 /* FileOperationsTests+TextFiles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Helpers.swift"; sourceTree = "<group>"; };
 		D603378022EDE94B00D89DCD /* FileOperations+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Error.swift"; sourceTree = "<group>"; };
 		D642F6942306E39900013FA6 /* FileOperations+TextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+TextFile.swift"; sourceTree = "<group>"; };
+		D64A9E1D2307CFF500540AD1 /* FileOperationsTests+TextFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperationsTests+TextFiles.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				D603374522ED789D00D89DCD /* FileOperationsTests.swift */,
+				D64A9E1D2307CFF500540AD1 /* FileOperationsTests+TextFiles.swift */,
 				D603374722ED789D00D89DCD /* Info.plist */,
 			);
 			path = FileOperationsTests;
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64A9E1E2307CFF500540AD1 /* FileOperationsTests+TextFiles.swift in Sources */,
 				D603374622ED789D00D89DCD /* FileOperationsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -91,9 +91,9 @@ public extension FileOperations {
             /// Throws error if invalid file name
             throw generateFileError(
                 .invalidDirectoryeName,
-                description: "Invalid file name.",
+                description: "Invalid directory name.",
                 failureReason: "Write failed",
-                recoverySuggestion: "Provide valid file name"
+                recoverySuggestion: "Provide valid directory name"
             )
         }
         return directoryURL!
@@ -113,9 +113,9 @@ public extension FileOperations {
             /// Throws error if invalid file name
             throw generateFileError(
                 .invalidDirectoryURL,
-                description: "Invalid File URL.",
+                description: "Invalid directory URL.",
                 failureReason: "Write failed",
-                recoverySuggestion: "Provide valid file URL"
+                recoverySuggestion: "Provide valid directory URL"
             )
         }
         return directoryURL

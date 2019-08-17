@@ -59,9 +59,6 @@ class FileOperationsTests: XCTestCase {
     }
 
     func testPerformanceExample() {
-
-        try? FileOperations.clearDirectory(path: .document)
-        let path = try? FileOperations.createDirectory(in: .document, direcotryName: "Image")
         self.measure {
         }
     }
