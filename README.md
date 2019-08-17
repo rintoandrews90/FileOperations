@@ -1,4 +1,4 @@
-# File Operations Preview+
+# File Operations Preview
 
 A library that helps developers to easily perform file-related operations. In iOS, 
 
