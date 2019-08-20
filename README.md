@@ -130,3 +130,4 @@ let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPat
 try? FileOperations.removeDirectory(with directoryURL:documentDirectoryURL)
 
 ```
+[![HitCount](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations.svg)](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations)
