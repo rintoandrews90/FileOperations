@@ -14,6 +14,7 @@ A library that helps developers to easily perform file-related operations. In iO
 ## Requirements
 
   
+
 | File Operations Version | 0.0.2 |
 |--|--|
 | iOS Version | 10.0+ |
@@ -42,11 +43,11 @@ A library that helps developers to easily perform file-related operations. In iO
 
 ****DirectoryPath defines three directories which commonly used in our iOS application****
 
-1. document
+1. Documents Directory
 
-2. temp
+2. Temporary Directory
 
-3. cache
+3.  Cache Directory
 
  
 ## URL Methods
@@ -81,7 +82,7 @@ let cacheDirectoryURL = FileOperations.getCacheDirectoryURL()
 
   
 
-Delete all contents of Directory
+Delete all contents of Directory Path
 
 ```swift
 
@@ -96,6 +97,7 @@ Create directory in document/temp/cache directory with given file name. Method r
 ```swift
 
 let path = try? FileOperations.createDirectory(in: .document, direcotryName: "Image")
+
 
 ```
 
@@ -115,7 +117,7 @@ Remove directory from document/temp/cache directory with given file name
 
 ```swift
 
-try? FileOperations.removeDirectory(.document, with: "Image")
+try? FileOperations.removeDirectory(by: .document, with: "Images")
 
 ```
 
