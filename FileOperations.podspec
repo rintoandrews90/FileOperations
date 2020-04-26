@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FileOperations"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A Library that helps developers to handle file operations"
 
   # This description is used to generate tags and improve search results.
