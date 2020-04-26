@@ -130,4 +130,19 @@ let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPat
 try? FileOperations.removeDirectory(with directoryURL:documentDirectoryURL)
 
 ```
+
+
+------------
+
+## Bundle Related Methods
+
+Readt text file from bundle
+
+```swift
+ let fileContent = try? FileOperations.getText(form: Bundle.main, fileName: "sample")
+
+```
+ 
 [![HitCount](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations.svg)](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations)
+
+
