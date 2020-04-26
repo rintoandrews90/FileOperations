@@ -22,6 +22,9 @@
 		D603377A22ED922000D89DCD /* FileOperations.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D603373722ED789D00D89DCD /* FileOperations.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D603377F22EDE60100D89DCD /* FileOperations+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */; };
 		D603378122EDE94B00D89DCD /* FileOperations+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D603378022EDE94B00D89DCD /* FileOperations+Error.swift */; };
+		D610AE1C2455DBAE00EAE6A1 /* FileOperations+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D610AE1B2455DBAE00EAE6A1 /* FileOperations+Bundle.swift */; };
+		D610AE1F2455E3EB00EAE6A1 /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = D610AE1E2455E3EB00EAE6A1 /* sample.txt */; };
+		D610AE202455E3EB00EAE6A1 /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = D610AE1E2455E3EB00EAE6A1 /* sample.txt */; };
 		D642F6952306E39900013FA6 /* FileOperations+TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D642F6942306E39900013FA6 /* FileOperations+TextFile.swift */; };
 		D64A9E1E2307CFF500540AD1 /* FileOperationsTests+TextFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A9E1D2307CFF500540AD1 /* FileOperationsTests+TextFiles.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D603373622ED789D00D89DCD;
 			remoteInfo = FileOperations;
+		};
+		D610AE212455E53800EAE6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D603372E22ED789D00D89DCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D603375422ED78B800D89DCD;
+			remoteInfo = FileOperationsExamples;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -85,6 +95,8 @@
 		D603377722ED86D800D89DCD /* FileOperations+Directories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Directories.swift"; sourceTree = "<group>"; };
 		D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Helpers.swift"; sourceTree = "<group>"; };
 		D603378022EDE94B00D89DCD /* FileOperations+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Error.swift"; sourceTree = "<group>"; };
+		D610AE1B2455DBAE00EAE6A1 /* FileOperations+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Bundle.swift"; sourceTree = "<group>"; };
+		D610AE1E2455E3EB00EAE6A1 /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
 		D642F6942306E39900013FA6 /* FileOperations+TextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+TextFile.swift"; sourceTree = "<group>"; };
 		D64A9E1D2307CFF500540AD1 /* FileOperationsTests+TextFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperationsTests+TextFiles.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,11 +160,13 @@
 		D603373922ED789D00D89DCD /* FileOperations */ = {
 			isa = PBXGroup;
 			children = (
+				D610AE1D2455E2F800EAE6A1 /* Resources */,
 				D603373A22ED789D00D89DCD /* FileOperations.h */,
 				D603373B22ED789D00D89DCD /* Info.plist */,
 				D603377522ED7AE200D89DCD /* FileOperations.swift */,
 				D603377722ED86D800D89DCD /* FileOperations+Directories.swift */,
 				D603378022EDE94B00D89DCD /* FileOperations+Error.swift */,
+				D610AE1B2455DBAE00EAE6A1 /* FileOperations+Bundle.swift */,
 				D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */,
 				D642F6942306E39900013FA6 /* FileOperations+TextFile.swift */,
 			);
@@ -189,6 +203,14 @@
 				D603376E22ED78BA00D89DCD /* Info.plist */,
 			);
 			path = FileOperationsExamplesTests;
+			sourceTree = "<group>";
+		};
+		D610AE1D2455E2F800EAE6A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D610AE1E2455E3EB00EAE6A1 /* sample.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +258,7 @@
 			);
 			dependencies = (
 				D603374322ED789D00D89DCD /* PBXTargetDependency */,
+				D610AE222455E53800EAE6A1 /* PBXTargetDependency */,
 			);
 			name = FileOperationsTests;
 			productName = FileOperationsTests;
@@ -296,6 +319,7 @@
 					};
 					D603373F22ED789D00D89DCD = {
 						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D603375422ED78B800D89DCD;
 					};
 					D603375422ED78B800D89DCD = {
 						CreatedOnToolsVersion = 10.1;
@@ -348,6 +372,7 @@
 			files = (
 				D603376222ED78BA00D89DCD /* LaunchScreen.storyboard in Resources */,
 				D603375F22ED78BA00D89DCD /* Assets.xcassets in Resources */,
+				D610AE1F2455E3EB00EAE6A1 /* sample.txt in Resources */,
 				D603375D22ED78B900D89DCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D610AE202455E3EB00EAE6A1 /* sample.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D603377F22EDE60100D89DCD /* FileOperations+Helpers.swift in Sources */,
+				D610AE1C2455DBAE00EAE6A1 /* FileOperations+Bundle.swift in Sources */,
 				D642F6952306E39900013FA6 /* FileOperations+TextFile.swift in Sources */,
 				D603377822ED86D800D89DCD /* FileOperations+Directories.swift in Sources */,
 				D603378122EDE94B00D89DCD /* FileOperations+Error.swift in Sources */,
@@ -454,6 +481,11 @@
 			isa = PBXTargetDependency;
 			target = D603373622ED789D00D89DCD /* FileOperations */;
 			targetProxy = D603377B22ED922000D89DCD /* PBXContainerItemProxy */;
+		};
+		D610AE222455E53800EAE6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D603375422ED78B800D89DCD /* FileOperationsExamples */;
+			targetProxy = D610AE212455E53800EAE6A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -658,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EH2A35JCN3;
 				INFOPLIST_FILE = FileOperationsTests/Info.plist;
@@ -670,6 +703,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileOperationsExamples.app/FileOperationsExamples";
 			};
 			name = Debug;
 		};
@@ -677,6 +711,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EH2A35JCN3;
 				INFOPLIST_FILE = FileOperationsTests/Info.plist;
@@ -689,6 +724,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileOperationsExamples.app/FileOperationsExamples";
 			};
 			name = Release;
 		};

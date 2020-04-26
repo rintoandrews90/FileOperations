@@ -12,9 +12,11 @@ import XCTest
 class FileOperationsTests: XCTestCase {
 
     override func setUp() {
+
     }
 
     override func tearDown() {
+
     }
 
     func testGetDocumentsDirectory() {
@@ -63,4 +65,12 @@ class FileOperationsTests: XCTestCase {
         }
     }
 
+    func testGetTextFileContentsFromBundle() {
+        let fileContent = try? FileOperations.getText(form: Bundle.main, fileName: "sample")
+        if fileContent != nil {
+            XCTAssert(true, "Content \(fileContent ?? "")")
+        } else {
+            XCTFail("Error while reading file")
+        }
+    }
 }
