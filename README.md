@@ -137,7 +137,6 @@ try? FileOperations.removeDirectory(with directoryURL:documentDirectoryURL)
 ```
 
 
-------------
 
 ## Bundle Related Methods
 
@@ -148,7 +147,7 @@ Readt text file from bundle
 
 ```
  
- ### Contributers
+ ###  Contributers
  
  ------------
  
