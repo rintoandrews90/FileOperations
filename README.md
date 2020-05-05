@@ -1,7 +1,9 @@
 ![adfsdfenter image description here](https://raw.githubusercontent.com/rintoandrews90/FileOperations/master/folder.png)
 # File Operations Preview 
 
-[![Build Status](https://travis-ci.org/rinto-andrews/FileOperations.svg?branch=master)](https://travis-ci.org/rinto-andrews/FileOperations) [![codecov](https://codecov.io/gh/rinto-andrews/FileOperations/branch/master/graph/badge.svg)](https://codecov.io/gh/rinto-andrews/FileOperations) [![HitCount](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations.svg)](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations)
+[![Build Status](https://travis-ci.org/rinto-andrews/FileOperations.svg?branch=master)](https://travis-ci.org/rinto-andrews/FileOperations) [![codecov](https://codecov.io/gh/rinto-andrews/FileOperations/branch/master/graph/badge.svg)](https://codecov.io/gh/rinto-andrews/FileOperations) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+
+[![HitCount](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations.svg)](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations)
 
   
 
