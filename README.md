@@ -1,7 +1,7 @@
 ![adfsdfenter image description here](https://raw.githubusercontent.com/rintoandrews90/FileOperations/master/folder.png)
 # File Operations Preview 
 
-[![Build Status](https://travis-ci.org/rinto-andrews/FileOperations.svg?branch=master)](https://travis-ci.org/rinto-andrews/FileOperations)
+[![Build Status](https://travis-ci.org/rinto-andrews/FileOperations.svg?branch=master)](https://travis-ci.org/rinto-andrews/FileOperations) [![HitCount](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations.svg)](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations)
 
   
 
@@ -144,6 +144,6 @@ Readt text file from bundle
 
 ```
  
-[![HitCount](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations.svg)](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations)
+
 
 
