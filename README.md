@@ -1,5 +1,7 @@
 ![adfsdfenter image description here](https://raw.githubusercontent.com/rintoandrews90/FileOperations/master/folder.png)
-# File Operations Preview [![Build Status](https://travis-ci.org/rintoandrews90/FileOperations.svg?branch=master)](https://travis-ci.org/rintoandrews90/FileOperations)
+# File Operations Preview 
+
+[![Build Status](https://travis-ci.org/rinto-andrews/FileOperations.svg?branch=master)](https://travis-ci.org/rinto-andrews/FileOperations)
 
   
 
