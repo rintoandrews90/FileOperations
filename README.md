@@ -149,6 +149,9 @@ Readt text file from bundle
 ```
  
  ### Contributers
+ 
+ ------------
+ 
 [![](https://avatars3.githubusercontent.com/u/16162588?size=50)](https://avatars3.githubusercontent.com/u/16162588?size=50) [![](https://avatars1.githubusercontent.com/u/11071838?size=50)](https://github.com/remarkablemark)
 
 
