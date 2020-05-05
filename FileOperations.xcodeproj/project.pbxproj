@@ -135,6 +135,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DC464DA24613AF6004513A9 /* ImageOperations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageOperations;
+			sourceTree = "<group>";
+		};
 		D603372D22ED789D00D89DCD = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +167,7 @@
 		D603373922ED789D00D89DCD /* FileOperations */ = {
 			isa = PBXGroup;
 			children = (
+				8DC464DA24613AF6004513A9 /* ImageOperations */,
 				D610AE1D2455E2F800EAE6A1 /* Resources */,
 				D603373A22ED789D00D89DCD /* FileOperations.h */,
 				D603373B22ED789D00D89DCD /* Info.plist */,
