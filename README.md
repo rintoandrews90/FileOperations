@@ -149,7 +149,8 @@ Readt text file from bundle
 ```
  
  ### Contributers
- [![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/rinto-andrews/FileOperations/graphs/contributors)
+[![](https://avatars3.githubusercontent.com/u/16162588?s=460&u=aeec66f2b2c269c4e8879cb11c2da4a6d86945f0&v=4&size=50)](https://github.com/remarkablemark)
+
 
 
 
