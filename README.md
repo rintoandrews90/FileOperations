@@ -5,7 +5,6 @@
 
 A library that helps developers to easily perform file-related operations. In iOS,
 
-  =for html <a href="https://travis-ci.org/rinto-andrews/FileOperations"><img src="https://travis-ci.org/rinto-andrews/FileOperations.svg?branch=master"></a>
 
 >_We write our files mainly into three directories Documents Directory, Temporary Directory, Cache Directory_
 
