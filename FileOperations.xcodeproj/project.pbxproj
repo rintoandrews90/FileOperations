@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D60003D22465C65900D2A818 /* FileOperations+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60003D12465C65900D2A818 /* FileOperations+Bundle.swift */; };
+		D60003D42465C66400D2A818 /* FileOperations+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60003D32465C66400D2A818 /* FileOperations+Directories.swift */; };
+		D60003D62465C66700D2A818 /* FileOperations+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60003D52465C66700D2A818 /* FileOperations+Error.swift */; };
+		D60003D82465C66D00D2A818 /* FileOperations+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60003D72465C66D00D2A818 /* FileOperations+Helpers.swift */; };
 		OBJ_31 /* FileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* FileOperations.swift */; };
 		OBJ_38 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_49 /* FileOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* FileOperationsTests.swift */; };
@@ -46,12 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"FileOperations::FileOperations::Product" /* FileOperations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileOperations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60003D12465C65900D2A818 /* FileOperations+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Bundle.swift"; sourceTree = "<group>"; };
+		D60003D32465C66400D2A818 /* FileOperations+Directories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Directories.swift"; sourceTree = "<group>"; };
+		D60003D52465C66700D2A818 /* FileOperations+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Error.swift"; sourceTree = "<group>"; };
+		D60003D72465C66D00D2A818 /* FileOperations+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations+Helpers.swift"; sourceTree = "<group>"; };
+		"FileOperations::FileOperations::Product" /* FileOperations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FileOperations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"FileOperations::FileOperationsTests::Product" /* FileOperationsTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = FileOperationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* FileOperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperationsTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* FileOperations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FileOperations; sourceTree = SOURCE_ROOT; };
-		OBJ_18 /* FileOperationsExamples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FileOperationsExamples; sourceTree = SOURCE_ROOT; };
 		OBJ_19 /* FileOperationsTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FileOperationsTests; sourceTree = SOURCE_ROOT; };
 		OBJ_20 /* FileOperationsExamplesTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FileOperationsExamplesTests; sourceTree = SOURCE_ROOT; };
 		OBJ_21 /* Licence.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Licence.md; sourceTree = "<group>"; };
@@ -109,7 +116,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -117,7 +124,6 @@
 				OBJ_10 /* Tests */,
 				OBJ_14 /* Products */,
 				OBJ_17 /* FileOperations */,
-				OBJ_18 /* FileOperationsExamples */,
 				OBJ_19 /* FileOperationsTests */,
 				OBJ_20 /* FileOperationsExamplesTests */,
 				OBJ_21 /* Licence.md */,
@@ -126,7 +132,6 @@
 				OBJ_24 /* folder.png */,
 				OBJ_25 /* _config.yml */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -141,6 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* FileOperations.swift */,
+				D60003D12465C65900D2A818 /* FileOperations+Bundle.swift */,
+				D60003D32465C66400D2A818 /* FileOperations+Directories.swift */,
+				D60003D52465C66700D2A818 /* FileOperations+Error.swift */,
+				D60003D72465C66D00D2A818 /* FileOperations+Helpers.swift */,
 			);
 			name = FileOperations;
 			path = Sources/FileOperations;
@@ -212,7 +221,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -230,7 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				D60003D42465C66400D2A818 /* FileOperations+Directories.swift in Sources */,
+				D60003D82465C66D00D2A818 /* FileOperations+Helpers.swift in Sources */,
 				OBJ_31 /* FileOperations.swift in Sources */,
+				D60003D62465C66700D2A818 /* FileOperations+Error.swift in Sources */,
+				D60003D22465C65900D2A818 /* FileOperations+Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +289,8 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = FileOperations.xcodeproj/FileOperations_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = FileOperations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
@@ -304,8 +317,8 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = FileOperations.xcodeproj/FileOperations_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = FileOperations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
@@ -338,6 +351,8 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				INFOPLIST_FILE = FileOperations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -382,6 +397,8 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				INFOPLIST_FILE = FileOperations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
