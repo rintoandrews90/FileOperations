@@ -4,7 +4,7 @@ language: swift
 osx_image: xcode11.3
 env:
   matrix:
-    - TEST_SDK=iphonesimulator13.1 OS=13.1 NAME='iPhone 11 Pro'
+    - TEST_SDK=iOS Simulator OS=13.1 NAME='iPhone 11 Pro'
     #- TEST_SDK=iphonesimulator13.2 OS=10.14.6 NAME='iPhone 7'
 
 script:
