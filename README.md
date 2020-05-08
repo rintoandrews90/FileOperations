@@ -20,7 +20,7 @@ A library that helps developers to easily perform file-related operations. In iO
 
   
 
-| File Operations Version | 0.0.6 |
+| File Operations Version | 0.0.7 |
 |--|--|
 | iOS Version | 10.0+ |
 | Xcode | 10+ |
@@ -34,6 +34,10 @@ A library that helps developers to easily perform file-related operations. In iO
 
 ### CocoaPods
 
+------------
+
+
+
 [CocoaPods](https://cocoapods.org/)  is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your  `Podfile`:
 
   
@@ -42,7 +46,17 @@ A library that helps developers to easily perform file-related operations. In iO
 
   
 
+### Swift Package Manager &reg;
 
+------------
+
+
+
+The **Swift Package Manager** is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
+
+Use below url for adding swift package
+
+    https://github.com/rintoandrews90/FileOperations.git
 
 
 
