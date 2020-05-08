@@ -166,7 +166,7 @@ Create text file form path
 Delete file with specified path
 
 ```swift
- let filePath =  try? FileOperations.createTextFile(with: path, content: "Sample Text")
+  let isDeleted = try FileOperations.deleteFile(with: "About", in: .document)
 
 ```
 
