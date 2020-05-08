@@ -3,6 +3,10 @@
 
 [![Build Status](https://travis-ci.org/rinto-andrews/FileOperations.svg?branch=master)](https://travis-ci.org/rinto-andrews/FileOperations) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest) [![codecov](https://codecov.io/gh/rinto-andrews/FileOperations/branch/master/graph/badge.svg)](https://codecov.io/gh/rinto-andrews/FileOperations) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
+[![CocoaPods](https://img.shields.io/cocoapods/p/SWXMLHash.svg)]()
+
+[![CocoaPods](https://img.shields.io/cocoapods/v/SWXMLHash.svg)](https://cocoapods.org/pods/FileOperations)
+
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)  [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/rinto-andrews/FileOperations/graphs/contributors)
 
 [![HitCount](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations.svg)](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations)
@@ -190,6 +194,7 @@ Delete file with specified path
  ------------
  
 [![](https://avatars3.githubusercontent.com/u/16162588?size=50)](https://avatars3.githubusercontent.com/u/16162588?size=50) [![](https://avatars1.githubusercontent.com/u/11071838?size=50)](https://github.com/remarkablemark)
+
 
 
 
