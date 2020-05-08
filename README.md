@@ -146,6 +146,29 @@ Readt text file from bundle
  let fileContent = try? FileOperations.getText(form: Bundle.main, fileName: "sample")
 
 ```
+
+## Text File Operations
+
+Create text file with file name and directory path
+
+```swift
+ let filePath =  try? FileOperations.createTextFile(in: .document, fileName: "About", content: "Sample Text")
+
+```
+
+Create text file form path
+
+```swift
+ let filePath =  try? FileOperations.createTextFile(with: path, content: "Sample Text")
+
+```
+
+Delete file with specified path
+
+```swift
+ let isDeleted = try? FileOperations.deleteFile(with: "About", in: .document)
+
+``
  
  ###  Contributers
  
