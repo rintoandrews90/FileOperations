@@ -20,11 +20,11 @@ A library that helps developers to easily perform file-related operations. In iO
 
   
 
-| File Operations Version | 0.0.2 |
+| File Operations Version | 0.0.6 |
 |--|--|
 | iOS Version | 10.0+ |
 | Xcode | 10+ |
-| Swift | 4.2 |
+| Swift | 4.2 | 5
 
   
 
