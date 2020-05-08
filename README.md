@@ -59,6 +59,7 @@ Use below url for adding swift package
     https://github.com/rintoandrews90/FileOperations.git
 
 
+## Directory Types
 
 ****DirectoryPath defines three directories which commonly used in our iOS application****
 
@@ -97,7 +98,7 @@ let cacheDirectoryURL = FileOperations.getCacheDirectoryURL()
 
 ```
 
-## Directory Methods
+## Directory Operations
 
   
 
@@ -152,7 +153,7 @@ try? FileOperations.removeDirectory(with directoryURL:documentDirectoryURL)
 
 
 
-## Bundle Related Methods
+## Bundle Operations
 
 Readt text file from bundle
 
