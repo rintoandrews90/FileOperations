@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/rinto-andrews/FileOperations.svg?branch=master)](https://travis-ci.org/rinto-andrews/FileOperations) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest) [![codecov](https://codecov.io/gh/rinto-andrews/FileOperations/branch/master/graph/badge.svg)](https://codecov.io/gh/rinto-andrews/FileOperations) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-[![CocoaPods](https://img.shields.io/cocoapods/p/SWXMLHash.svg)]()
+
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/SWXMLHash.svg)](https://cocoapods.org/pods/FileOperations)
 
