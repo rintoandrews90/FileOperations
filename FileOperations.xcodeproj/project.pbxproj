@@ -167,6 +167,7 @@
 		D603373922ED789D00D89DCD /* FileOperations */ = {
 			isa = PBXGroup;
 			children = (
+				D63FE8EA2465273800BBFF83 /* TextFileOperations */,
 				8DC464DA24613AF6004513A9 /* ImageOperations */,
 				D610AE1D2455E2F800EAE6A1 /* Resources */,
 				D603373A22ED789D00D89DCD /* FileOperations.h */,
@@ -176,7 +177,6 @@
 				D603378022EDE94B00D89DCD /* FileOperations+Error.swift */,
 				D610AE1B2455DBAE00EAE6A1 /* FileOperations+Bundle.swift */,
 				D603377E22EDE60100D89DCD /* FileOperations+Helpers.swift */,
-				D642F6942306E39900013FA6 /* FileOperations+TextFile.swift */,
 			);
 			path = FileOperations;
 			sourceTree = "<group>";
@@ -219,6 +219,14 @@
 				D610AE1E2455E3EB00EAE6A1 /* sample.txt */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D63FE8EA2465273800BBFF83 /* TextFileOperations */ = {
+			isa = PBXGroup;
+			children = (
+				D642F6942306E39900013FA6 /* FileOperations+TextFile.swift */,
+			);
+			path = TextFileOperations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
