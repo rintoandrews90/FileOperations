@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FileOperations"
-  spec.version      = "0.0.16"
+  spec.version      = "0.0.17"
   spec.summary      = "A Library that helps developers to handle file operations"
 
   # This description is used to generate tags and improve search results.
@@ -61,7 +61,7 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Rinto Andrews" => "rintoandrews90@gmail.com" }
   # Or just: spec.author    = "Rinto Andrews"
-  # spec.authors            = { "Rinto Andrews" => "rintoandrews90@gmail.com" }
+  spec.authors            = { "Rinto Andrews" => "rintoandrews90@gmail.com" , "Binshad K B" => "kbbinshad@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Rinto Andrews"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/rintoandrews90/FileOperations.git", :tag => "0.0.16"  }
+  spec.source       = { :git => "https://github.com/rintoandrews90/FileOperations.git", :tag => "0.0.17"  }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
