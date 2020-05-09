@@ -1,5 +1,7 @@
-![](https://github.com/rintoandrews90/FileOperations/blob/master/baner.png?raw=true)
 # File Operations Preview 
+
+![](https://github.com/rintoandrews90/FileOperations/blob/master/baner.png?raw=true)
+
 
 [![Build Status](https://travis-ci.org/rintoandrews90/FileOperations.svg?branch=master)](https://travis-ci.org/rintoandrews90/FileOperations) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest) [![codecov](https://codecov.io/gh/rinto-andrews/FileOperations/branch/master/graph/badge.svg)](https://codecov.io/gh/rinto-andrews/FileOperations) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
