@@ -20,7 +20,7 @@ A library that helps developers to easily perform file-related operations. In iO
 
   
 
-| File Operations Version | 0.0.2 |
+| File Operations Version | 0.0.15 |
 |--|--|
 | iOS Version | 10.0+ |
 | Xcode | 10+ |
@@ -45,7 +45,7 @@ A library that helps developers to easily perform file-related operations. In iO
 
 
 
-
+## Directory Types
 ****DirectoryPath defines three directories which commonly used in our iOS application****
 
 1. Documents Directory
