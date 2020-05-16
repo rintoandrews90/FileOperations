@@ -20,9 +20,9 @@ extension FileOperationsTests {
     func testCreateTextFile() {
         let filePath =  try? FileOperations.createTextFile(in: .document, fileName: "About", content: "Sample Text")
         // If the file created successfull, then deleate the file
-        addTeardownBlock {
-            let isDeleted = try? FileOperations.deleteFile(with: "About", in: .document)
-        }
+//        addTeardownBlock {
+//            let isDeleted = try? FileOperations.deleteFile(with: "About", in: .document)
+//        }
         XCTAssertNotNil(filePath, "Text file creation failed")
 
     }
