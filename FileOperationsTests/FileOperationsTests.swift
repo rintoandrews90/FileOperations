@@ -12,11 +12,21 @@ import XCTest
 class FileOperationsTests: XCTestCase {
 
     override func setUp() {
-
+        // Will be executed before each testcase
     }
 
     override func tearDown() {
-
+        // Will be executed after each testcase
+    }
+    
+    override class func setUp() {
+        super.setUp()
+        // This will execute only once for TextCase class(this class)
+    }
+    
+    override class func tearDown() {
+        super.tearDown()
+        // This will execute only once for TextCase class(this class)
     }
 
     func testPerformanceExample() {
