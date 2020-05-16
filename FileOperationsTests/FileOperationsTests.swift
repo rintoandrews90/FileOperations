@@ -19,58 +19,29 @@ class FileOperationsTests: XCTestCase {
 
     }
 
-    func testGetDocumentsDirectory() {
-        let documentsDirectory: URL? = FileOperations.getDocumentDirectoryURL()
-        if documentsDirectory != nil {
-            XCTAssert(true, "Document URL is present")
-            print(documentsDirectory as Any)
-        } else {
-            XCTFail("Error while retriving douments directory")
-        }
-    }
-
-    func testGetTempDirectory() {
-        let documentsDirectory: URL? = FileOperations.getTemporaryDirectoryURL()
-        if documentsDirectory != nil {
-            XCTAssert(true, "Document URL is present")
-            print(documentsDirectory as Any)
-        } else {
-            XCTFail("Error while retriving temp directory")
-        }
-    }
-
-    func testGetCacheDirectory() {
-        let documentsDirectory: URL? = FileOperations.getCacheDirectoryURL()
-        if documentsDirectory != nil {
-            XCTAssert(true, "Document URL is present")
-            print(documentsDirectory as Any)
-        } else {
-            XCTFail("Error while retriving cache directory")
-        }
-    }
-
-    func testCreateDirectoryWithRUL() {
-        let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
-        let path: URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
-        if path != nil {
-            XCTAssert(true, "Document URL is present")
-            print(path as Any)
-        } else {
-            XCTFail("Error creating directory")
-        }
-    }
-
     func testPerformanceExample() {
         self.measure {
         }
     }
 
-    func testGetTextFileContentsFromBundle() {
-        let fileContent = try? FileOperations.getText(form: Bundle.main, fileName: "sample")
-        if fileContent != nil {
-            XCTAssert(true, "Content \(fileContent ?? "")")
-        } else {
-            XCTFail("Error while reading file")
-        }
+    func testGetDocumentsDirectory() {
+        let documentsDirectory: URL? = FileOperations.getDocumentDirectoryURL()
+        XCTAssertNotNil(documentsDirectory, "Document URL is Present")
+    }
+
+    func testGetTempDirectory() {
+        let documentsDirectory: URL? = FileOperations.getTemporaryDirectoryURL()
+        XCTAssertNotNil(documentsDirectory, "Temporary URL is Present")
+    }
+
+    func testGetCacheDirectory() {
+        let documentsDirectory: URL? = FileOperations.getCacheDirectoryURL()
+         XCTAssertNotNil(documentsDirectory, "Cache URL is Present")
+    }
+
+    func testCreateDirectoryWithRUL() {
+        let documentDirectoryURL = FileOperations.getDocumentDirectoryURL().appendingPathComponent("test")
+        let path: URL? = try? FileOperations.createDirectory(with: documentDirectoryURL)
+        XCTAssertNotNil(path, "Directory Created")
     }
 }
