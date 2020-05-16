@@ -11,6 +11,9 @@ import XCTest
 
 class FileOperationsTests: XCTestCase {
 
+    // XCode runs Unit test in Alphabetical order by default
+    // Enable code coverage -> Schemas -> Test -> Options -> Enable Code Coverage
+
     override func setUp() {
         // Will be executed before each testcase
     }
