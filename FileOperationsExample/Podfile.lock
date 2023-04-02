@@ -1,0 +1,16 @@
+PODS:
+  - FileOperations (0.0.17)
+
+DEPENDENCIES:
+  - FileOperations (from `../`)
+
+EXTERNAL SOURCES:
+  FileOperations:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FileOperations: 376bff2c516546991b051e67dae6241fe353c564
+
+PODFILE CHECKSUM: 17a5553fca9eaf315ca3a98eecb9f77795d866f6
+
+COCOAPODS: 1.11.3
