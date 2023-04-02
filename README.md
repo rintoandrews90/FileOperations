@@ -4,7 +4,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)  [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/rinto-andrews/FileOperations/graphs/contributors)
 
-[![HitCount](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations.svg)](http://hits.dwyl.io/rintoandrews90/https://githubcom/rintoandrews90/FileOperations)
+
 
  ![](https://github.com/rintoandrews90/FileOperations/blob/master/baner.png?raw=true)
 
@@ -38,10 +38,6 @@ A library that helps developers to easily perform file-related operations. In iO
   
 
     pod 'FileOperations'
-
-  
-
-
 
 
 ## Directory Types
